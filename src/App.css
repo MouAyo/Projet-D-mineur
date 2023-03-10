@@ -1,0 +1,149 @@
+#root {
+  height: 95vh;
+}
+
+
+
+/* --------------------- Thème --------------------- */
+
+.theme-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 190, 190);
+  padding: 30px;
+  background-image: url("./images/theme.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.theme-grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-color: white #808080 #808080 white;
+  padding: 14px;
+  background-color: rgb(190, 190, 190);
+}
+
+.theme-window-outer {
+  border: 2px solid;
+  border-color: white rgb(4, 16, 28) rgb(4, 16, 28) white;
+  padding: 20px 5px 5px 5px;
+  background-color: #718bbe;
+}
+
+.theme-window-title {
+  background-color: #718bbe;
+  border-bottom: 2px solid rgb(4, 16, 28);
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  height: 20px;
+}
+
+.theme-title-img {
+  position: absolute;
+  top: -22px;
+  left: -7px;
+  width: calc(100% + 14px);
+  height: 44px;
+  object-fit: fill;
+}
+
+.theme-window-title-text {
+  left: 48px;
+  top: -16px;
+  position: absolute;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.micro-text {
+  margin-left: 10px;
+  font-size: 6px;
+}
+
+/* --------------------- Menu --------------------- */
+
+@keyframes image_blur {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+    filter: blur(0px);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.4);
+    filter: blur(5px);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+    filter: blur(0px);
+  }
+}
+
+
+
+@media (min-width: 560px) {
+  .invisible-menu {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -4px;
+    top: -17px;
+    z-index: 3;
+    animation: image_blur 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+.invisible-menu:hover {
+  animation-iteration-count: unset;
+  background-color: rgba(0, 0, 0, 0.2);
+  filter: blur(3px);
+}
+
+.theme-menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+  background-color: #fff;
+  border: 2px solid black;
+  color: white;
+  overflow: hidden;
+  position: absolute;
+  top: 21px;
+  z-index: 4;
+}
+
+.theme-menu-item {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.theme-menu-item.select {
+  list-style: disc;
+}
+
+.theme-menu-item:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+@media (min-width: 560px) {
+  .desktop-only {
+    display: block;
+  }
+}

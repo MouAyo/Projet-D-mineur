@@ -1,0 +1,11 @@
+.button-start {
+  border: 4px solid;
+  border-color: white #808080 #808080 white;
+  /* cursor: pointer; */
+}
+
+.button-start-down {
+  border: 4px solid;
+  border-color: #808080 white white #808080;
+  /* cursor: pointer; */
+}
