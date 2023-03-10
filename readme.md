@@ -18,5 +18,5 @@ npm start
 
 ## Instructions
 
-- Pour commencer le jeu cliquer sur le boutton smiley
-- Pour choisir la difficulte cliquer sur le boutton a gauche de la barre de menu 
+- Pour commencer le jeu cliquer sur le bouton smiley
+- Pour choisir la difficulte cliquer sur le bouton a gauche de la barre de menu 
