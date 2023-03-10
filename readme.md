@@ -8,7 +8,7 @@
 - NodeJS
 - Vous pouvez télécharger le programme d'installation de Node.js pour votre système d'exploitation à partir du site officiel : https://nodejs.org/en/download/
 ```sh
-cd demineur
+cd "root project"
 npm audit fix --force
 npm install
 #Réouvrir le projet
